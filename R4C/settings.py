@@ -90,3 +90,12 @@ USE_TZ = False
 STATIC_URL = "/static/"
 
 LAST_SEVEN_DAYS = datetime.now() - timedelta(days=7)
+
+
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+EMAIL_HOST_USER = "your_mail@test.com"
+EMAIL_HOST_PASSWORD = "your_password"
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST = "smtp.example.com"
