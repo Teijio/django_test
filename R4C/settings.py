@@ -85,6 +85,8 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 STATIC_URL = "/static/"
+
+LAST_SEVEN_DAYS = datetime.now() - timedelta(days=7)
